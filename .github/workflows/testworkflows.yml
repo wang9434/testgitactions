@@ -26,3 +26,7 @@ jobs:
    # use gradle commands 
       - name: Setup Gradle 
         uses: gradle/gradle-build-action@v2 
+        
+   # run unit tests 
+      - name: Execute Unit Tests 
+        run: ./gradlew clean testDebugUnitTest
